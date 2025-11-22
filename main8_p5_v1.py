@@ -238,10 +238,10 @@ class DashboardWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.lbl_Tach1.setVerticalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAlwaysOff)
 
         self.kmh_needle = NeedleIndicator(
-            self.scene, "IMAGE/Tach.png", (1560.130, 394.130), 270, 40, 150
+            self.scene, "IMAGE/Tach.png", (1560.130, 394.130), 270, 41, 150
         )
         self.rpm_needle = NeedleIndicator(
-            self.scene, "IMAGE/Tach2.png", (359.553, 394.468), 270, 40, 10000
+            self.scene, "IMAGE/Tach2.png", (359.553, 394.468), 270, 41, 10000
         )
         self.scene.setSceneRect(0, 0, self.kmh_needle.pixmap.width(), self.kmh_needle.pixmap.height())
         self.lbl_Tach1.fitInView(self.scene.sceneRect(), Qt.AspectRatioMode.KeepAspectRatio)
