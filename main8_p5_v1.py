@@ -68,7 +68,7 @@ class ColoredStatusLetter(QLabel):
         color = self.active_color if active else self.inactive_color
         self.setStyleSheet(f"color: {color}; background: transparent;")
 
-# Added: Circle indicator with image overlay
+
 class ColoredCircleIndicator(QLabel):
     def __init__(self, parent, geometry):
         super().__init__(parent)
@@ -83,10 +83,10 @@ class ColoredCircleIndicator(QLabel):
     def paintEvent(self, event):
         painter = QPainter(self)
         painter.setRenderHint(QPainter.RenderHint.Antialiasing)
-        diameter = min(self.width(), self.height()) * 0.85  # margin inside widget
+        diameter = min(self.width(), self.height()) * 0.85
         center_x = self.width() // 2
         center_y = self.height() // 2
-        #rect = QRect(center_x - diameter / 2, center_y - diameter / 2, diameter, diameter)
+
         rect = QRect(
             int(center_x - diameter / 2),
             int(center_y - diameter / 2),
@@ -173,7 +173,7 @@ class DashboardTester:
                         f"VITESSE={vitesse}"
                     )
 
-                    # Apply circle indicator logic
+
                     if hasattr(d, 'circle_state_indicator') and d.circle_state_indicator:
                         if etat_unsigned < 75:
                             d.circle_state_indicator.set_color("red")
@@ -238,46 +238,40 @@ class DashboardWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.lbl_Tach1.setVerticalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAlwaysOff)
 
         self.kmh_needle = NeedleIndicator(
-            self.scene, "IMAGE/Tach.png", (1560.130, 394.130), 270, 40, 250
+            self.scene, "IMAGE/Tach.png", (1560.130, 394.130), 270, 40, 150
         )
         self.rpm_needle = NeedleIndicator(
-            self.scene, "IMAGE/Tach2.png", (359.553, 394.468), 270, 40, 8000
+            self.scene, "IMAGE/Tach2.png", (359.553, 394.468), 270, 40, 10000
         )
         self.scene.setSceneRect(0, 0, self.kmh_needle.pixmap.width(), self.kmh_needle.pixmap.height())
         self.lbl_Tach1.fitInView(self.scene.sceneRect(), Qt.AspectRatioMode.KeepAspectRatio)
 
         self.animated_labels = {
-            'kmh': NumberLabel(self.centralwidget, sportypo_family, 80, "deepskyblue", (1380, 590, 330, 110)),
-            'rpm': NumberLabel(self.centralwidget, sportypo_family, 80, "deepskyblue", (180, 590, 330, 110)),
-            'in_curr': NumberLabel(self.centralwidget, sportypo_family, 40, "magenta", (1390, 760, 310, 110)),
-            'out_curr': NumberLabel(self.centralwidget, sportypo_family, 40, "magenta", (1390, 880, 310, 110)),
-            'temp_motor': NumberLabel(self.centralwidget, sportypo_family, 40, "red", (280, 770, 310, 110)),
-            'temp_drive': NumberLabel(self.centralwidget, sportypo_family, 40, "red", (280, 855, 310, 110)),
-            'temp_mr': NumberLabel(self.centralwidget, sportypo_family, 40, "red", (280, 935, 310, 110)),
+            'kmh': NumberLabel(self.centralwidget, sportypo_family, 60, "deepskyblue", (1380, 590, 330, 110)),
+            'rpm': NumberLabel(self.centralwidget, sportypo_family, 60, "deepskyblue", (180, 590, 330, 110)),
+            'in_curr': NumberLabel(self.centralwidget, sportypo_family, 30, "magenta", (1390, 760, 310, 110)),
+            'out_curr': NumberLabel(self.centralwidget, sportypo_family, 30, "magenta", (1390, 880, 310, 110)),
+            'temp_motor': NumberLabel(self.centralwidget, sportypo_family, 30, "red", (280, 770, 310, 110)),
+            'temp_drive': NumberLabel(self.centralwidget, sportypo_family, 30, "red", (280, 855, 310, 110)),
+            'temp_mr': NumberLabel(self.centralwidget, sportypo_family, 30, "red", (280, 935, 310, 110)),
         }
 
         self.letters_mode = {
-            'M': ColoredStatusLetter(self.centralwidget, "MANUEL", (715, 200, 500, 90), sportypo_family, 60, "lime"),
-            'A': ColoredStatusLetter(self.centralwidget, "AUTO", (700, 310, 500, 90), sportypo_family, 60, "orange"),
+            'M': ColoredStatusLetter(self.centralwidget, "MANUEL", (715, 190, 500, 90), sportypo_family, 50, "lime"),
+            'A': ColoredStatusLetter(self.centralwidget, "AUTO", (700, 310, 500, 90), sportypo_family, 50, "orange"),
         }
         self.letters_speed = {
-            'R': ColoredStatusLetter(self.centralwidget, "R", (710, 490, 100, 90), sportypo_family, 80, "red"),
-            '1': ColoredStatusLetter(self.centralwidget, "1", (840, 490, 100, 90), sportypo_family, 80, "yellow"),
-            '2': ColoredStatusLetter(self.centralwidget, "2", (980, 490, 100, 90), sportypo_family, 80, "yellow"),
-            '3': ColoredStatusLetter(self.centralwidget, "3", (1130, 490, 100, 90), sportypo_family, 80, "yellow"),
+            'R': ColoredStatusLetter(self.centralwidget, "R", (710, 490, 100, 90), sportypo_family, 60, "red"),
+            '1': ColoredStatusLetter(self.centralwidget, "1", (840, 490, 100, 90), sportypo_family, 60, "yellow"),
+            '2': ColoredStatusLetter(self.centralwidget, "2", (980, 490, 100, 90), sportypo_family, 60, "yellow"),
+            '3': ColoredStatusLetter(self.centralwidget, "3", (1130, 490, 100, 90), sportypo_family, 60, "yellow"),
         }
-        """
-        self.letters_state = {
-            'P': ColoredStatusLetter(self.centralwidget, "P", (730, 890, 100, 90), sportypo_family, 80, "aqua"),
-            'R': ColoredStatusLetter(self.centralwidget, "R", (900, 890, 100, 90), sportypo_family, 80, "deepskyblue"),
-            'E': ColoredStatusLetter(self.centralwidget, "E", (1060, 890, 100, 90), sportypo_family, 80, "crimson"),
-        }
-        """
 
-        # Add the colored circle state
+
+
         self.circle_state_indicator = ColoredCircleIndicator(
             self.centralwidget,
-            (900, 870, 150, 150)
+            (900, 850, 150, 150)
         )
 
         self.TESTING_MODE = False
