@@ -215,9 +215,6 @@ class DashboardWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.lbl_num_1.hide()
         self.lbl_num_2.hide()
         self.lbl_num_3.hide()
-        #self.lbl_STATE_P.hide()
-        #self.lbl_STATE_R.hide()
-        #self.lbl_STATE_E.hide()
 
         font_path = os.path.join(os.path.dirname(__file__), "FONT", "Sportypo.ttf")
         font_id = QFontDatabase.addApplicationFont(font_path)
