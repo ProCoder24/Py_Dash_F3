@@ -252,11 +252,11 @@ class DashboardWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.animated_labels = {
             'kmh': NumberLabel(self.centralwidget, sportypo_family, 60, "deepskyblue", (1380, 590, 330, 110)),
             'rpm': NumberLabel(self.centralwidget, sportypo_family, 60, "deepskyblue", (180, 590, 330, 110)),
-            'in_curr': NumberLabel(self.centralwidget, sportypo_family, 30, "magenta", (1390, 760, 310, 110)),
-            'out_curr': NumberLabel(self.centralwidget, sportypo_family, 30, "magenta", (1390, 880, 310, 110)),
-            'temp_motor': NumberLabel(self.centralwidget, sportypo_family, 30, "red", (280, 770, 310, 110)),
-            'temp_drive': NumberLabel(self.centralwidget, sportypo_family, 30, "red", (280, 855, 310, 110)),
-            'temp_mr': NumberLabel(self.centralwidget, sportypo_family, 30, "red", (280, 935, 310, 110)),
+            'in_curr': NumberLabel(self.centralwidget, sportypo_family, 30, "magenta", (1330, 730, 310, 110)),
+            'out_curr': NumberLabel(self.centralwidget, sportypo_family, 30, "magenta", (1330, 850, 310, 110)),
+            'temp_motor': NumberLabel(self.centralwidget, sportypo_family, 30, "red", (320, 742, 310, 110)),
+            'temp_drive': NumberLabel(self.centralwidget, sportypo_family, 30, "red", (320, 825, 310, 110)),
+            'temp_mr': NumberLabel(self.centralwidget, sportypo_family, 30, "red", (320, 905, 310, 110)),
         }
 
         self.letters_mode = {

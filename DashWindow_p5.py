@@ -26,7 +26,7 @@ class Ui_MainWindow(object):
         self.lbl_Tach2.setObjectName("lbl_Tach2")
         self.lbl_LINES = QtWidgets.QLabel(parent=self.centralwidget)
         self.lbl_LINES.setGeometry(QtCore.QRect(0, 0, 1920, 1080))
-        self.lbl_LINES.setPixmap(QtGui.QPixmap("IMAGE/LINES_V3.png"))
+        self.lbl_LINES.setPixmap(QtGui.QPixmap("IMAGE/LINES_V4.png"))
         self.lbl_LINES.setObjectName("lbl_LINES")
         self.lbl_888_IN_CURR = QtWidgets.QLabel(parent=self.centralwidget)
         self.lbl_888_IN_CURR.setGeometry(QtCore.QRect(0, 0, 1920, 1080))
