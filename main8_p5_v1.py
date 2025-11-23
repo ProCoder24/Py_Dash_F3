@@ -1,5 +1,8 @@
 import sys
+
 import os
+os.chdir("/home/userpi/Py_Dash_F2")
+
 from PyQt6 import QtWidgets, QtGui
 from PyQt6.QtCore import QTimer, Qt, QRect
 from PyQt6.QtWidgets import QGraphicsView, QGraphicsScene, QGraphicsPixmapItem, QLabel
