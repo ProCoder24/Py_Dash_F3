@@ -285,6 +285,7 @@ class DashboardWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             'kmh': 0,
             'in_curr': 0,
             'out_curr': 0,
+
             'temp_motor': 25,
             'temp_drive': 25,
             'temp_mr': 25,
