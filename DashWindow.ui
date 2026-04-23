@@ -24,7 +24,7 @@
      </rect>
     </property>
     <property name="pixmap">
-     <pixmap>IMAGE/Gauge.png</pixmap>
+     <pixmap>assets/images/Gauge.png</pixmap>
     </property>
    </widget>
    <widget class="QLabel" name="lbl_Gauge2">
@@ -37,7 +37,7 @@
      </rect>
     </property>
     <property name="pixmap">
-     <pixmap>IMAGE/Gauge2.png</pixmap>
+     <pixmap>assets/images/Gauge2.png</pixmap>
     </property>
    </widget>
    <widget class="QLabel" name="lbl_Tach1">
@@ -50,7 +50,7 @@
      </rect>
     </property>
     <property name="pixmap">
-     <pixmap>IMAGE/Tach.png</pixmap>
+     <pixmap>assets/images/Tach.png</pixmap>
     </property>
    </widget>
    <widget class="QLabel" name="lbl_Tach2">
@@ -63,7 +63,7 @@
      </rect>
     </property>
     <property name="pixmap">
-     <pixmap>IMAGE/Tach2.png</pixmap>
+     <pixmap>assets/images/Tach2.png</pixmap>
     </property>
    </widget>
    <widget class="QLabel" name="lbl_LINES">
@@ -76,7 +76,7 @@
      </rect>
     </property>
     <property name="pixmap">
-     <pixmap>IMAGE/LINES.png</pixmap>
+     <pixmap>assets/images/LINES.png</pixmap>
     </property>
    </widget>
    <widget class="QLabel" name="lbl_888_IN_CURR">
@@ -89,7 +89,7 @@
      </rect>
     </property>
     <property name="pixmap">
-     <pixmap>IMAGE/888_IN_CURR.png</pixmap>
+     <pixmap>assets/images/888_IN_CURR.png</pixmap>
     </property>
    </widget>
    <widget class="QLabel" name="lbl_IN_CURRENT">
@@ -102,7 +102,7 @@
      </rect>
     </property>
     <property name="pixmap">
-     <pixmap>IMAGE/IN_CURRENT.png</pixmap>
+     <pixmap>assets/images/IN_CURRENT.png</pixmap>
     </property>
    </widget>
    <widget class="QLabel" name="lbl_888_OUT_CURRENT">
@@ -115,7 +115,7 @@
      </rect>
     </property>
     <property name="pixmap">
-     <pixmap>IMAGE/888_OUT_CURR.png</pixmap>
+     <pixmap>assets/images/888_OUT_CURR.png</pixmap>
     </property>
    </widget>
    <widget class="QLabel" name="lbl_OUT_CURRENT">
@@ -128,7 +128,7 @@
      </rect>
     </property>
     <property name="pixmap">
-     <pixmap>IMAGE/OUT_CURRENT.png</pixmap>
+     <pixmap>assets/images/OUT_CURRENT.png</pixmap>
     </property>
    </widget>
    <widget class="QLabel" name="lbl_num_R">
@@ -141,7 +141,7 @@
      </rect>
     </property>
     <property name="pixmap">
-     <pixmap>IMAGE/num_R.png</pixmap>
+     <pixmap>assets/images/num_R.png</pixmap>
     </property>
    </widget>
    <widget class="QLabel" name="lbl_num_1">
@@ -154,7 +154,7 @@
      </rect>
     </property>
     <property name="pixmap">
-     <pixmap>IMAGE/num_1.png</pixmap>
+     <pixmap>assets/images/num_1.png</pixmap>
     </property>
    </widget>
    <widget class="QLabel" name="lbl_num_2">
@@ -167,7 +167,7 @@
      </rect>
     </property>
     <property name="pixmap">
-     <pixmap>IMAGE/num_2.png</pixmap>
+     <pixmap>assets/images/num_2.png</pixmap>
     </property>
    </widget>
    <widget class="QLabel" name="lbl_num_3">
@@ -180,7 +180,7 @@
      </rect>
     </property>
     <property name="pixmap">
-     <pixmap>IMAGE/num_3.png</pixmap>
+     <pixmap>assets/images/num_3.png</pixmap>
     </property>
    </widget>
    <widget class="QLabel" name="lbl_num_three_bar">
@@ -193,7 +193,7 @@
      </rect>
     </property>
     <property name="pixmap">
-     <pixmap>IMAGE/num_three_bar.png</pixmap>
+     <pixmap>assets/images/num_three_bar.png</pixmap>
     </property>
    </widget>
    <widget class="QLabel" name="lbl_MODE_M">
@@ -206,7 +206,7 @@
      </rect>
     </property>
     <property name="pixmap">
-     <pixmap>IMAGE/MODE_M.png</pixmap>
+     <pixmap>assets/images/MODE_M.png</pixmap>
     </property>
    </widget>
    <widget class="QLabel" name="lbl_MODE_A">
@@ -219,7 +219,7 @@
      </rect>
     </property>
     <property name="pixmap">
-     <pixmap>IMAGE/MODE_A.png</pixmap>
+     <pixmap>assets/images/MODE_A.png</pixmap>
     </property>
    </widget>
    <widget class="QLabel" name="lbl_MODE_one_bar">
@@ -232,7 +232,7 @@
      </rect>
     </property>
     <property name="pixmap">
-     <pixmap>IMAGE/MODE_one_bar.png</pixmap>
+     <pixmap>assets/images/MODE_one_bar.png</pixmap>
     </property>
    </widget>
    <widget class="QLabel" name="lbl_RPM_888">
@@ -245,7 +245,7 @@
      </rect>
     </property>
     <property name="pixmap">
-     <pixmap>IMAGE/RPM_888.png</pixmap>
+     <pixmap>assets/images/RPM_888.png</pixmap>
     </property>
    </widget>
    <widget class="QLabel" name="lbl_KM_H_888">
@@ -258,7 +258,7 @@
      </rect>
     </property>
     <property name="pixmap">
-     <pixmap>IMAGE/KM_H_888.png</pixmap>
+     <pixmap>assets/images/KM_H_888.png</pixmap>
     </property>
    </widget>
    <widget class="QLabel" name="lbl_RPM">
@@ -271,7 +271,7 @@
      </rect>
     </property>
     <property name="pixmap">
-     <pixmap>IMAGE/RPM.png</pixmap>
+     <pixmap>assets/images/RPM.png</pixmap>
     </property>
    </widget>
    <widget class="QLabel" name="lbl_KM_H">
@@ -284,7 +284,7 @@
      </rect>
     </property>
     <property name="pixmap">
-     <pixmap>IMAGE/KM_H.png</pixmap>
+     <pixmap>assets/images/KM_H.png</pixmap>
     </property>
    </widget>
    <widget class="QLabel" name="lbl_STATE_SYS">
@@ -297,7 +297,7 @@
      </rect>
     </property>
     <property name="pixmap">
-     <pixmap>IMAGE/STATE_SYS.png</pixmap>
+     <pixmap>assets/images/STATE_SYS.png</pixmap>
     </property>
    </widget>
    <widget class="QLabel" name="lbl_STATE_two_bar">
@@ -310,7 +310,7 @@
      </rect>
     </property>
     <property name="pixmap">
-     <pixmap>IMAGE/STATE_two_bar.png</pixmap>
+     <pixmap>assets/images/STATE_two_bar.png</pixmap>
     </property>
    </widget>
    <widget class="QLabel" name="lbl_STATE_P">
@@ -323,7 +323,7 @@
      </rect>
     </property>
     <property name="pixmap">
-     <pixmap>IMAGE/STATE_P.png</pixmap>
+     <pixmap>assets/images/STATE_P.png</pixmap>
     </property>
    </widget>
    <widget class="QLabel" name="lbl_STATE_R">
@@ -336,7 +336,7 @@
      </rect>
     </property>
     <property name="pixmap">
-     <pixmap>IMAGE/STATE_R.png</pixmap>
+     <pixmap>assets/images/STATE_R.png</pixmap>
     </property>
    </widget>
    <widget class="QLabel" name="lbl_STATE_E">
@@ -349,7 +349,7 @@
      </rect>
     </property>
     <property name="pixmap">
-     <pixmap>IMAGE/STATE_E.png</pixmap>
+     <pixmap>assets/images/STATE_E.png</pixmap>
     </property>
    </widget>
    <widget class="QLabel" name="lbl_888_T_MOTEUR">
@@ -362,7 +362,7 @@
      </rect>
     </property>
     <property name="pixmap">
-     <pixmap>IMAGE/888_T_MOTEUR.png</pixmap>
+     <pixmap>assets/images/888_T_MOTEUR.png</pixmap>
     </property>
    </widget>
    <widget class="QLabel" name="lbl_888_T_MR">
@@ -375,7 +375,7 @@
      </rect>
     </property>
     <property name="pixmap">
-     <pixmap>IMAGE/888_T_MR.png</pixmap>
+     <pixmap>assets/images/888_T_MR.png</pixmap>
     </property>
    </widget>
    <widget class="QLabel" name="lbl_TEMP_DRIVE">
@@ -388,7 +388,7 @@
      </rect>
     </property>
     <property name="pixmap">
-     <pixmap>IMAGE/TEMP_DRIVE.png</pixmap>
+     <pixmap>assets/images/TEMP_DRIVE.png</pixmap>
     </property>
    </widget>
    <widget class="QLabel" name="lbl_888_T_DRIVE">
@@ -401,7 +401,7 @@
      </rect>
     </property>
     <property name="pixmap">
-     <pixmap>IMAGE/888_T_DIRVE.png</pixmap>
+     <pixmap>assets/images/888_T_DIRVE.png</pixmap>
     </property>
    </widget>
    <widget class="QLabel" name="lbl_TEMP_MOTEUR">
@@ -414,7 +414,7 @@
      </rect>
     </property>
     <property name="pixmap">
-     <pixmap>IMAGE/TEMP_MOTEUR.png</pixmap>
+     <pixmap>assets/images/TEMP_MOTEUR.png</pixmap>
     </property>
    </widget>
    <widget class="QLabel" name="lbl_TEMP_MR">
@@ -427,7 +427,7 @@
      </rect>
     </property>
     <property name="pixmap">
-     <pixmap>IMAGE/TEMP_MR.png</pixmap>
+     <pixmap>assets/images/TEMP_MR.png</pixmap>
     </property>
    </widget>
   </widget>
